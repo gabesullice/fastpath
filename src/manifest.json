@@ -17,5 +17,13 @@
     "default_icon": "icons/icon.svg",
     "default_title": "URL Path Copier",
     "default_popup": "popup.html"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "fastpath@browser-extensions.sullice.com",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
   }
 }
