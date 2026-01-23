@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 180px;
+      padding: 12px;
+      margin: 0;
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 14px;
+    }
+    button {
+      width: 100%;
+      padding: 10px 12px;
+      margin: 4px 0;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      transition: background-color 0.15s;
+    }
+    #copy {
+      background-color: #4a90d9;
+      color: white;
+    }
+    #copy:hover {
+      background-color: #3a7bc8;
+    }
+    #paste {
+      background-color: #4caf50;
+      color: white;
+    }
+    #paste:hover {
+      background-color: #43a047;
+    }
+  </style>
+</head>
+<body>
+  <button id="copy">Copy Path</button>
+  <button id="paste">Paste Path</button>
+  <script src="popup.js"></script>
+</body>
+</html>
