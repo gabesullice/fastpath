@@ -1,6 +1,10 @@
+<p align="center">
+  <img src="logo.png" alt="Fastpath logo">
+</p>
+
 # Fastpath: URL Path Copier
 
-A simple Firefox add-on that copies and pastes URL paths between tabs, ignoring and preserving the tab's origin (i.e., its scheme, host, and port).
+A simple Firefox add-on that copies and pastes URL paths between tabs, ignoring or preserving the tab's origin (i.e., its scheme, host, and port).
 
 ## Use Case
 
