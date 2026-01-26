@@ -17,16 +17,16 @@ When you need to visit the same path on different domains or ports. For example:
 
 ## Installation
 
+### Installation
+
+Install from the [Firefox Add-ons page](https://addons.mozilla.org/firefox/addon/fastpath/).
+
 ### Temporary Installation (for development)
 
 1. Open Firefox and navigate to `about:debugging`
 2. Click "This Firefox" in the left sidebar
 3. Click "Load Temporary Add-on..."
 4. Select the `manifest.json` file from this directory
-
-### Permanent Installation
-
-Install from [Firefox Add-ons](https://addons.mozilla.org/) (coming soon).
 
 ## Usage
 
