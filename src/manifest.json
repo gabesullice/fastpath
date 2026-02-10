@@ -8,6 +8,19 @@
     "48": "icons/icon.svg",
     "96": "icons/icon.svg"
   },
+  "commands": {
+    "copy-path": {
+      "suggested_key": { "default": "Alt+Shift+C" },
+      "description": "Copy the current tab's URL path to the clipboard"
+    },
+    "paste-path": {
+      "suggested_key": { "default": "Alt+Shift+V" },
+      "description": "Paste a URL path from the clipboard to the current tab"
+    }
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
   "permissions": [
     "activeTab",
     "clipboardWrite",
