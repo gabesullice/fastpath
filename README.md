@@ -35,6 +35,15 @@ Click the extension icon in your toolbar to reveal two buttons:
 - **Copy Path** — Copies the current tab's path, query string, and fragment (everything after the host)
 - **Paste Path** — Reads the clipboard and navigates to that path on the current tab's origin
 
+### Keyboard Shortcuts
+
+You can also use keyboard shortcuts instead of the popup:
+
+- **Alt+Shift+C** — Copy Path
+- **Alt+Shift+V** — Paste Path
+
+These shortcuts can be customized in Firefox via `about:addons` → gear icon → **Manage Extension Shortcuts**.
+
 ## Permissions
 
 - `activeTab` — Access the current tab's URL
