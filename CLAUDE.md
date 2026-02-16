@@ -20,11 +20,13 @@ There are no automated tests. Testing requires manually loading `src/manifest.js
 
 ## Architecture
 
-The entire extension is three files in `src/`:
+The source files live in `src/`:
 
-- **manifest.json** - Extension manifest (Manifest v2) declaring `activeTab`, `clipboardWrite`, `clipboardRead` permissions and a `browser_action` popup.
-- **popup.html** - Popup UI with two buttons ("Copy Path" and "Paste Path") and inline CSS.
-- **popup.js** - All logic. Copy extracts `pathname + search + hash` from the active tab's URL via the `URL` API and writes it to the clipboard. Paste reads the clipboard and navigates the active tab to `origin + clipboardText`. Both actions close the popup afterward.
+- **manifest.json** - Extension manifest (Manifest v2) declaring permissions, `commands` (keyboard shortcuts), a `browser_action` popup, and a background script.
+- **actions.js** - Shared business logic: `copyPath()` extracts `pathname + search + hash` and writes it to the clipboard; `pastePath()` reads the clipboard and navigates the active tab to `origin + clipboardText`. Loaded by both the popup and the background script.
+- **popup.html** - Popup UI with two buttons ("Copy Path" and "Paste Path") and inline CSS. Loads `actions.js` and `popup.js`.
+- **popup.js** - Button click handlers that call `copyPath()`/`pastePath()` and close the popup.
+- **background.js** - Listens for `browser.commands.onCommand` and dispatches to `copyPath()`/`pastePath()`.
 
 The extension uses the `browser.*` WebExtensions API (Firefox-specific, not Chrome's `chrome.*`).
 
