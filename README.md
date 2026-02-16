@@ -39,8 +39,8 @@ Click the extension icon in your toolbar to reveal two buttons:
 
 You can also use keyboard shortcuts instead of the popup:
 
-- **Alt+Shift+C** — Copy Path
-- **Alt+Shift+V** — Paste Path
+- **Alt+Shift+U** — Copy **U**RL Path
+- **Alt+Shift+I** — Paste **I**nto Path
 
 These shortcuts can be customized in Firefox via `about:addons` → gear icon → **Manage Extension Shortcuts**.
 
