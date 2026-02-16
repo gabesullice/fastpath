@@ -10,11 +10,11 @@
   },
   "commands": {
     "copy-path": {
-      "suggested_key": { "default": "Alt+Shift+C" },
+      "suggested_key": { "default": "Alt+Shift+U" },
       "description": "Copy the current tab's URL path to the clipboard"
     },
     "paste-path": {
-      "suggested_key": { "default": "Alt+Shift+V" },
+      "suggested_key": { "default": "Alt+Shift+I" },
       "description": "Paste a URL path from the clipboard to the current tab"
     }
   },
